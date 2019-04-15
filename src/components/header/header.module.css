@@ -1,0 +1,6 @@
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #bcc3ce;
+}

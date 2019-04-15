@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 20px auto;
+
+}
+
+.top_row {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 600px){
+    .top_row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .react-autosuggest__container {
+        margin-bottom: 10px;
+    }
+
+    .error {
+        text-align: center;
+    }
+}

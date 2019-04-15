@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+}
+
+.mid {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 50%;
+}
+
+
+
+
+
+

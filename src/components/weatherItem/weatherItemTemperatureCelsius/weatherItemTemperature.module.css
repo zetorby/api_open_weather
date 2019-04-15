@@ -1,0 +1,13 @@
+.temp {
+    font-size: 40px;
+    align-self: center;
+}
+
+.active {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.border {
+    margin: 0 3px;
+}
