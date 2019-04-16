@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button} from 'semantic-ui-react'
+import PropTypes from 'prop-types';
 
 const ButtonSemanticUI = (props) => {
     return (
@@ -9,5 +10,10 @@ const ButtonSemanticUI = (props) => {
         </Button>
     )
 }
+
+ButtonSemanticUI.propTypes = {
+	handleKeyDown:PropTypes.func,
+	handleSubmit:PropTypes.func
+};
 
 export default ButtonSemanticUI

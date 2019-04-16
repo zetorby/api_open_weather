@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import WeatherItemTitle from './weatherItemTitle';
 import WeatherItemDate from './weatherItemDate';
@@ -6,10 +7,10 @@ import WeatherItemIcon from './weatherItemIcon';
 import WeatherItemTemperatureCelsius from './weatherItemTemperatureCelsius';
 import WeatherItemHumidity from './weatherItemHumidity';
 import WeatherItemWind from './weatherItemWind';
-
-import style from './weatherItem.module.css'
 import WeatherItemTemperatureFahrenheit from './weatherItemTemperatureFahrenheit';
 import ButtonToggleTemperature from './buttonToggleTemperature';
+
+import style from './weatherItem.module.css'
 
 class WeatherItem extends React.Component {
     constructor(props) {
@@ -49,5 +50,9 @@ class WeatherItem extends React.Component {
         );
     }
 }
+
+WeatherItem.propTypes = {
+	data:PropTypes.object,
+};
 
 export default WeatherItem;

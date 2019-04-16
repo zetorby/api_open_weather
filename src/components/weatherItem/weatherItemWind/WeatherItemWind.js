@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import style from "./weatherItemWind.module.css";
+import style from './weatherItemWind.module.css';
 
 const WeatherItemWind = (props) => {
     return(
@@ -9,5 +10,9 @@ const WeatherItemWind = (props) => {
         </span>
     )
 }
+
+WeatherItemWind.propTypes = {
+	data:PropTypes.object
+};
 
 export default WeatherItemWind;

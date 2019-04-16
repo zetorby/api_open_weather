@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import style from './weatherItemTitle.module.css';
+
 
 const WeatherItemTitle = (props) => {
     return (
@@ -9,5 +11,10 @@ const WeatherItemTitle = (props) => {
         </h3>
     )
 }
+
+WeatherItemTitle.propTypes = {
+	data:PropTypes.string
+};
+
 
 export default WeatherItemTitle;

@@ -1,6 +1,8 @@
 import React from 'react';
 
 import style from './buttonToggleTemperature.module.css';
+import PropTypes from 'prop-types';
+
 
 const ButtonToggleTemperature = (props) => {
 
@@ -21,5 +23,10 @@ const ButtonToggleTemperature = (props) => {
         </React.Fragment>
     )
 }
+
+ButtonToggleTemperature.propTypes = {
+	data:PropTypes.object,
+	handleToggleTemperature:PropTypes.func
+};
 
 export default ButtonToggleTemperature;

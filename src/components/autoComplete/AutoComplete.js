@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import Autosuggest from 'react-autosuggest';
 
 let cities = [];
@@ -82,6 +82,10 @@ class AutoComplete extends React.Component {
         );
     }
 }
+
+AutoComplete.propTypes = {
+	handleInputChange:PropTypes.func
+};
 
 export default AutoComplete;
 

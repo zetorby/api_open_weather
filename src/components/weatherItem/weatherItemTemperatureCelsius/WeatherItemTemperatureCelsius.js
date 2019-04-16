@@ -1,6 +1,7 @@
 import React from 'react';
 
 import style from './weatherItemTemperature.module.css';
+import PropTypes from 'prop-types';
 
 const WeatherItemTemperatureCelsius = (props) => {
     let temp
@@ -21,5 +22,9 @@ const WeatherItemTemperatureCelsius = (props) => {
 
     )
 }
+
+WeatherItemTemperatureCelsius.propTypes = {
+	data:PropTypes.object
+};
 
 export default WeatherItemTemperatureCelsius;

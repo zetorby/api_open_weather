@@ -2,6 +2,8 @@ import React from 'react';
 
 import style from './weatherItemDate.module.css';
 import * as moment from 'moment';
+import PropTypes from 'prop-types';
+
 
 const WeatherItemDate = (props) => {
     return (
@@ -10,5 +12,9 @@ const WeatherItemDate = (props) => {
         </span>
     )
 }
+
+WeatherItemDate.propTypes = {
+	data:PropTypes.number
+};
 
 export default WeatherItemDate;

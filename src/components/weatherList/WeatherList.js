@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import WeatherItem from '../weatherItem';
-import {loadLocalStorage} from '../autoComplete/AutoComplete.js';
+import {loadLocalStorage} from '../autoComplete/AutoComplete';
 import ButtonSemanticUI from '../semanticUI/ButtonSemanticUI';
 import Spinner from '../spinner';
 import AutoComplete from '../autoComplete';
-
-import style from './weatherList.module.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ErrorIndicator from '../errorIndicator';
 import CityNotFound from '../errorIndicator/cityNotFound';
+
+import style from './weatherList.module.css';
 
 class WeatherList extends Component {
     constructor(props) {
@@ -22,9 +23,9 @@ class WeatherList extends Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        if (this.state.data != nextProps.items) {
+        if (this.state.data !== nextProps.items) {
             return true
-        } else if (this.state.responseErrorText != nextProps.responseErrorText) {
+        } else if (this.state.responseErrorText !== nextProps.responseErrorText) {
             return true
         }
         return false
@@ -97,5 +98,9 @@ class WeatherList extends Component {
         );
     }
 }
+
+WeatherList.propTypes = {
+	items:PropTypes.object,
+};
 
 export default WeatherList;

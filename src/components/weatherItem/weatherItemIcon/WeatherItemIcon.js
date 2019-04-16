@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const WeatherItemIcon = (props) => {
 
@@ -15,5 +16,9 @@ const WeatherItemIcon = (props) => {
         </div>
     )
 }
+
+WeatherItemIcon.propTypes = {
+	data:PropTypes.array
+};
 
 export default WeatherItemIcon;

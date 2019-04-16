@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import style from './cityNotFound.module.css';
+
 
 const CityNotFound = (props) => {
     return (
@@ -12,6 +14,10 @@ const CityNotFound = (props) => {
             {props.responseErrorText}
         </span>
     );
+};
+
+CityNotFound.propTypes = {
+	city:PropTypes.string
 };
 
 export default CityNotFound;

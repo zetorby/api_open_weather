@@ -1,6 +1,7 @@
 import React from 'react';
 
 import style from './weatherItemHumidity.module.css';
+import PropTypes from 'prop-types';
 
 const WeatherItemHumidity = (props) => {
     return (
@@ -9,5 +10,9 @@ const WeatherItemHumidity = (props) => {
         </span>
     )
 }
+
+WeatherItemHumidity.propTypes = {
+	data:PropTypes.object
+};
 
 export default WeatherItemHumidity;
