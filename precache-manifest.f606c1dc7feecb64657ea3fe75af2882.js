@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/api_open_weather/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "ad97afd3337e8cda302d10ff5a4026b8",
-    "url": "/api_open_weather/static/media/outline-icons.ad97afd3.ttf"
-  },
-  {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
     "url": "/api_open_weather/static/media/outline-icons.701ae6ab.eot"
+  },
+  {
+    "revision": "ad97afd3337e8cda302d10ff5a4026b8",
+    "url": "/api_open_weather/static/media/outline-icons.ad97afd3.ttf"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/api_open_weather/static/css/2.e5a4c39c.chunk.css"
   },
   {
-    "revision": "1138dac481e66adf0934629702b6e94e",
+    "revision": "0b43f326ee9bdd589f5e4a5c60719882",
     "url": "/api_open_weather/index.html"
   }
 ];
